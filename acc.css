@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    font-size:17px;
+    color:#b6ff7a;
+    line-height : 1.6;
+}
+
+#showcase{
+    background-image: url("img.png");
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex; /* modele de disposition // methode permettant de distribuer l'espace entre des objets d'une interface ainsi que de les aligner.*/
+    flex-direction: column; /* bch lektiba tabda taht baadhha mch fard star */
+    justify-content: center ; /* l contenu yaani l ktiba dans ce cas bch tji fi centre mtaa l page */
+    align-items: center; /* kif kif hedhi fi chtar l 3ordh w li lfouk (justify..) fi chtar e toul (au milieu de l'axe des x*/
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+#showcase h1{
+    font-size:50px;
+}
+
+#showcase .button{
+    font-size:15px;
+    text-decoration:none;
+    color:#b6ff7a;
+    border: #b6ff7a 1px solid;
+    padding: 10px 24px;
+    border-radius:10px ;
+    margin-top:20px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+
+}
+
+
+#showcase .button:hover{
+    background-color: #b6ff7a;
+    color: white;
+}
+
+#about{
+
+    display:none;
+  
+}
+
+
+.btnn {
+    font-size:15px;
+    background: none;
+    text-decoration:none;
+    color:#b6ff7a;
+    border: #b6ff7a 1px solid;
+    padding: 10px 24px;
+    border-radius:10px ;
+    margin-top:20px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+.accueil .mode-emploi{
+    position: fixed;/*importante*/
+    right: -100%;/*importante*/
+    width:500px;
+    background-color:none;
+    align-items: center;
+    box-shadow: 4px 4px 5px grey;
+    font-size:15px;
+    background: none;
+    text-decoration:none;
+    color:#b6ff7a;
+    border: #b6ff7a 1px solid;
+    padding: 10px 24px;
+    border-radius:10px ;
+    margin-top:20px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btnn:hover{
+    background-color: #b6ff7a;
+    color: white;
+}
+
+.accueil .mode-emploi.show{
+    right: 4rem;/*importante  ama tnjm tbadel f distance */
+    transition: all .3s ease;
+}
+
+.description {
+    padding: 12px;
+    /*word-spacing: 2px;*/
+    line-height:1.4;
+    color:#31875d;
+    font-weight:200;
+    text-decoration:none;
+    font-family:Arial, sans-serif;
+    font-size:17px;
+    border: #b6ff7a;
+}
+
+

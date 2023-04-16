@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acc.css">
+    <title > Page d'acceuil</title>
+</head>
+<body>
+    <header id="showcase">
+        <h1>Bienvenue aux mots croisés</h1>
+       <!---- <a class="button" onclick="ma()">A PROPOS</a>
+        <div id="about" style="margin:20px;">
+            <p style="border: 2px solid #b6ff7a; border-radius:10px ; background-color:none ; color: white ; padding: 20px ;">ce jeu est dédié aux personnes interessées par le domaine de l'informatique , il s'agit de deux niveaux et chaque niveau portera sur un theme bien déterminé </p>
+        </div> -->
+        <div class="accueil" id="accueil">
+            <div class="boutons" id="emploi">
+                <button class="btnn " >
+                    <span>A PROPOS</span>         
+                </button>
+            </div>
+            <div class="mode-emploi">
+                <p class="description">
+                    Ce jeu est dédié aux personnes intéressées par le domaine de l'informatique. 
+                    Il comporte deux niveaux , chacun portera sur un thème bien déterminé:
+                    1er niveau : Développement WEB
+                    2eme niveau : POO
+                
+                </p>
+            </div>
+        </div>
+        <script >
+            const emploibtn = document.getElementById("emploi")
+            const emploidiv = document.querySelector(".mode-emploi");
+    
+            //lorsqu'on click sur le bouton mode d'emploi 
+            //elle va afficher une description sur le jeu 
+    
+            emploibtn.onclick = () => {
+                emploidiv.classList.toggle('show');
+            }
+        </script>
+        <a class="button" onclick="location.href='web.html';">COMMENCER LE JEU</a>
+    </header>
+    
+</body>
+<script>
+    function ma() {
+  var div = document.getElementById("about");
+
+  if (div.style.display === "none") {
+    div.style.display = "flex";
+  } else {
+    div.style.display = "none";
+  }}
+</script>
+</html>
